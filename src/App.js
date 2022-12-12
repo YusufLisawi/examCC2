@@ -1,7 +1,10 @@
 import React from 'react'
+import Acceuil from './components/Acceuil'
 
 export default function App() {
   return (
-    <div>App</div>
+    <div>
+      <Acceuil />
+    </div>
   )
 }
