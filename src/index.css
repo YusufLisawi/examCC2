@@ -1,13 +1,67 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+nav {
+	width: 100%;
+	background-color: rgb(8, 181, 124);
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+/* Users component */
+.user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 1rem;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user img {
+	width: 200px;
+	margin: 0.4rem 0;
+}
+.user h2 {
+	margin-bottom: 1rem;
+}
+.user a {
+	width: 100%;
+}
+.user button {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	background-color: rgb(8, 181, 124);
+	color: white;
+	border: none;
+	margin: 0.25rem 0;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+}
+/* ListUser component */
+.ListUser {
+	display: grid;
+	place-content: center;
+	padding: 0 8rem;
+	grid-template-columns: repeat(4, minmax(300px, 1fr));
+	gap: 1rem;
 }
