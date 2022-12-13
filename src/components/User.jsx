@@ -11,7 +11,7 @@ export default function User({ id, nom, prenom, image }) {
 			<Link to={`detailUser/${id}`}>
 				<button>Detail User</button>
 			</Link>
-			<Link to={`detailUser/${id}`}>
+			<Link to={`listPosts/${id}`}>
 				<button>Liste des posts</button>
 			</Link>
 		</div>
