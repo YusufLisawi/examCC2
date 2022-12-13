@@ -86,3 +86,36 @@ nav {
 	display: grid;
 	place-content: center;
 }
+/* ListPosts component */
+.ListPosts {
+	display: grid;
+	place-content: center;
+	padding: 0 3rem;
+	gap: 1rem;
+}
+.ListPosts .post {
+	border-radius: 1rem;
+	padding: 1rem;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	position: relative;
+}
+.ListPosts .post h2 {
+	color: #fff;
+	margin-bottom: 1rem;
+}
+.ListPosts .post h2::before {
+	content: "";
+	position: absolute;
+	border-radius: 1rem 1rem 0 0;
+	background-color: rgb(8, 181, 124);
+	width: 100%;
+	inset: 0;
+	z-index: -1;
+	height: 3.5rem;
+}
+.ListPosts .post > span {
+	font-weight: 700;
+}

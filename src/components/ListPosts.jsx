@@ -15,6 +15,7 @@ export default function ListPosts() {
 			listPosts.posts.posts.filter((post) => post.userId == id)
 		);
 	}, []);
+	console.log("listPostUser: ", listPostUser);
 	return (
 		<>
 			<h1 style={{ margin: "1rem" }}>Liste des posts:</h1>
@@ -33,7 +34,12 @@ export default function ListPosts() {
 							<div className="post">
 								<h2>{post.title}</h2>
 								<p>{post.body}</p>
-								<span>{post.tags}</span>
+								<span id="tags">
+									Tags :{" "}
+									{post.tags.map((e) => (
+										<span>{e} </span>
+									))}
+								</span>
 							</div>
 						))}
 					</>
